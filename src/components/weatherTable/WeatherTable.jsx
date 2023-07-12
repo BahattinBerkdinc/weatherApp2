@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react'
+import React, {useState } from 'react'
 import './style.scss' 
 import WeatherForm from '../weatherForm/WeatherForm'
 import WeatherInfo from '../weatherInfo/WeatherInfo'
@@ -37,7 +37,7 @@ const WeatherTable = () => {
         <WeatherInfo data={data}/>
         </div>
         <div className="right-side" style={!city && !data ? {display:"none", borderRight:0}: {display:"block"}}>
-          <WeatherWeek data={data}/>
+          <WeatherWeek data={data} />
         </div>
       </div>  
     </div>

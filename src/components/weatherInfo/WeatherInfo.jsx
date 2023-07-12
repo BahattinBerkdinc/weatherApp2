@@ -12,7 +12,8 @@ const WeatherInfo = ({data}) => {
         <h5>{data.city.name}</h5>
         <h6 style={{fontWeight:"200"}}>{data.list[0].dt_txt.split(" ")[0]}</h6>
         <h1>{data.list[0].main.temp.toFixed(0)}<small>°</small></h1>
-        <span style={{fontStyle:'italic', fontWeight:"200"}}>-Gökyüzü  {data.list[0].weather[0].description}-</span>
+        <img src={`https://openweathermap.org/img/w/${data.list[0].weather[0].icon}.png`} style={{width:"50px"}} alt="" />
+        <span style={{fontWeight:"200", color:"#fff"}}>Gökyüzü  {data.list[0].weather[0].description}</span>
         
         <div className='temp-info'>
             <div>
