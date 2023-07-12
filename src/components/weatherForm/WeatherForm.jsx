@@ -13,6 +13,7 @@ const handleCityName = (e) => {
 const showCityInfo = (e) => {
     e.preventDefault()
   handleData()
+  window.document.title = `${city.toUpperCase()} Hava Durumu` 
 }
 
     
