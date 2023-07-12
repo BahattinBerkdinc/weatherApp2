@@ -10,6 +10,11 @@
 body{
     background-image: url("./images/bg-cloud.jpg");
     background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  
 
    
 }
+

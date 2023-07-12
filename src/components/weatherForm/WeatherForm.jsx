@@ -20,11 +20,11 @@ const showCityInfo = (e) => {
   return (
     <form>
       <input type="text"
-      placeholder='Type a City'
+      placeholder='Sehir Giriniz'
     value={city || '' }
     onChange={handleCityName}
       />
-      <button type='submit' onClick={showCityInfo} >Goster</button>
+      <button type='submit' onClick={showCityInfo} >Göster</button>
     </form>
   )
 }
