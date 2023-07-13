@@ -28,6 +28,8 @@ const WeatherTable = () => {
 
   }
 
+  
+
 
   return (
     <div className='w-table'>
@@ -36,7 +38,7 @@ const WeatherTable = () => {
         <WeatherForm city={city} setCity={setCity} handleData={handleData} />
         <WeatherInfo data={data}/>
         </div>
-        <div className="right-side" style={!city && !data ? {display:"none", borderRight:0}: {display:"block"}}>
+        <div className="right-side" id='right-side' style={{display:"none"}} >
           <WeatherWeek data={data} />
         </div>
       </div>  

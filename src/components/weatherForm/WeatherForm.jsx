@@ -3,6 +3,7 @@ import './style.scss'
 
 const WeatherForm = ({city,setCity,handleData}) => {
 
+  const rightSide = window.document.querySelector("#right-side")
 
 
 const handleCityName = (e) => {
@@ -13,6 +14,7 @@ const handleCityName = (e) => {
 const showCityInfo = (e) => {
     e.preventDefault()
   handleData()
+  rightSide.style.display="flex"
   window.document.title = `${city.toUpperCase()} Hava Durumu` 
 }
 

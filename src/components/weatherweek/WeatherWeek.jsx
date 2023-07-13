@@ -19,7 +19,7 @@ const WeatherWeek = ({data}) => {
         
         {
            
-            data.list.slice(1,9).map((data,index)=>{
+            data.list.slice(2,10).map((data,index)=>{
                 return (
                     <Col  md={6} lg={4} className="day-box mb-3" key={index}>
                     <small>{data.dt_txt.split(" ")[0]}</small>
